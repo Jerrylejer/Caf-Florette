@@ -1,0 +1,129 @@
+/* reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* general */
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+p {
+  margin-bottom: 10px;
+}
+
+.separator {
+  height: 10px;
+  width: 100px;
+  margin: 20px auto;
+  background: #999;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 30px;
+}
+
+.btn-primary {
+  background: white;
+  color: #222;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  color: white;
+  background: #222;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* header */
+
+.header {
+  background: #333;
+  /* le passage de type block à float nécessite une réparation avec overflow*/
+  overflow: auto;
+  /* la LH des liens étant plus petite que le H1 parent, iul est nécessaire de l'augmenter pour l'aligner sur la LH du H1 parent */
+  line-height: 1em;
+}
+
+.header nav h1 {
+  float: left;
+  padding: 20px;
+  /* élimine le décalage unduit par le MB des titre h1 h2 h3 plus haut */
+  margin-bottom: 0;
+}
+
+.header nav h1 a {
+  color: white;
+}
+
+.header nav ul {
+  float: right;
+  list-style: none;
+}
+
+.header nav ul li {
+  float: left;
+}
+
+.header nav ul li a {
+  /* le padding n'a pas d'effety car les "a" sont en display inline, pour adapter margin, padding, il faut les transformer en display block qui accepte ces propriétés  */
+  display: block;
+  color: white;
+  padding: 20px;
+}
+
+.header nav ul li a:hover {
+  background-color: #444;
+}
+
+.active {
+  background-color: #444;
+}
+
+/* VP */
+.vp {
+  height: 700px;
+  background: url(../images/accueil\ medium\ retouchée.jpg) center center;
+  background-size: cover;
+}
+
+.vp-content {
+  max-width: 600px;
+  padding-top: 150px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.vp-content h1 {
+  font-size: 50px;
+}
+
+.vp-content p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.9em;
+}

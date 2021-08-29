@@ -1,0 +1,48 @@
+Notes sur la conception du site Café Florette :
+
+En title d'une première page d'	accueil, présenter le 
+title avec le nom de l'entreprise puis un séparateur,
+puis le nom de la page, tel que :
+
+CAFE FLORETTE | ACCUEIL
+
+Les moteurs de recherche comprennent bien cette mise
+en place
+
+*********************************************************
+Décalage des liens par rapport au h1
+
+Par défaut les navigateurs prennent 1.2 de font-size.
+Donc comme un h1 dans une nav a une taille de 1.5em par 
+défaut, sa LH sera de 1.2*1.5*16px donc 28.8px (1em=16px).
+
+Comme les élémments ont une taille par défaut de 1em, les 
+liens auront une LH de 1.2*1*16px donc 19.2px
+
+Pour donner la même LH aux éléments, il faudra donc la
+fixer à 1.7em
+
+**********************************************************
+Class my-10 signifie margin y, donc verticales (haut et 
+bas) de 10px. D'un coup d'oeil, on sait la fonction de 
+cette class CSS.
+
+*********************************************************
+Class separator qui permet de créer une petite de séparation
+entre le h1 et le p.
+
+*********************************************************
+2 niveaux de class pour le btn :
+- btn qui regroupe l'ossature (padding, b-radius, display)
+- btn-primary qui look le btn non actionné
+1 pseudo class :hover qui inverse la couleur texte/fond
+lors du passage de la souris
+
+*********************************************************
+1 class vp qui est l'élément container et qui aura une 
+height de 700px. vp accueille une image centrée V et H et
+cover.
+
+*********************************************************
+1 class vp-content qui accueille le h1, le p et le a qui
+prendra forme d'un btn.
