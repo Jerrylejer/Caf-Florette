@@ -11,6 +11,7 @@
 html,
 body {
   font-family: "Open Sans", sans-serif;
+  color: #222;
 }
 
 h1,
@@ -23,6 +24,7 @@ a {
   color: #222;
   text-decoration: none;
 }
+
 p {
   margin-bottom: 10px;
 }
@@ -51,11 +53,65 @@ p {
 .btn-primary:hover {
   color: white;
   background: #222;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-dark {
+  color: white;
+  background: #222;
+  border: 1px solid white;
+}
+
+.btn-dark:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 .my-10 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.padd-100 {
+  padding: 100px 0px;
+}
+
+.underline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  display: block;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.chip {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  border-radius: 100px;
+  background: #333;
+  color: white;
+}
+
+.chip-purple {
+  /* pour récupérer une couleur : ouvrir l'iunspecteur et sélectionner une couleur dans styles, cliquer dessus et le sélecteur de clrs apparait. Cliquer sur la pipette et déplacer la souris sur la zone de couleur à dupliquer, le code clr apparait dans le sélecteur*/
+  background: #be418d;
+}
+
+.chip-brown {
+  background: #8c5e24;
 }
 
 /* header */
@@ -126,4 +182,63 @@ p {
   font-size: 18px;
   letter-spacing: 0.5px;
   line-height: 1.9em;
+}
+
+/* features */
+
+.features {
+  overflow: auto;
+  padding: 100px 100px;
+  text-align: center;
+}
+
+.feature {
+  float: left;
+  width: 50%;
+}
+
+/* person */
+
+.person {
+  height: 400px;
+  background: url(../images/lesly-juarez-1AhGNGKuhR0-unsplash.jpg) center
+    center/cover;
+}
+
+/* reservation */
+
+.reservation {
+  text-align: center;
+}
+
+/* where */
+
+.where {
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.where-img {
+  float: left;
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.where-text {
+  float: right;
+  width: 50%;
+}
+
+/* footer */
+
+footer {
+  background: #222;
+  color: white;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0px;
 }

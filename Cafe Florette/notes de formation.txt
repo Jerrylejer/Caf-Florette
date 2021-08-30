@@ -46,3 +46,12 @@ cover.
 *********************************************************
 1 class vp-content qui accueille le h1, le p et le a qui
 prendra forme d'un btn.
+
+*********************************************************
+TIPS pour récupérer une couleur d'élément web via l'inspe
+cteur.
+ouvrir l'iunspecteur et sélectionner une couleur dans 
+styles, cliquer dessus et le sélecteur de clrs apparait. 
+Cliquer sur la pipette et déplacer la souris sur la zone 
+de couleur à dupliquer, le code clr apparait dans le séle
+cteur.
