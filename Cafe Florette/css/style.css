@@ -197,12 +197,20 @@ p {
   width: 50%;
 }
 
+.fas {
+  transform: scale(3);
+  padding-bottom: 15px;
+}
+
 /* person */
 
 .person {
   height: 400px;
   background: url(../images/lesly-juarez-1AhGNGKuhR0-unsplash.jpg) center
-    center/cover;
+    center/ cover;
+  /* permet de repositionner l'image recadrée dans son compartiment - pratique !!! */
+  /* fonctionne avec top, bottom, right, ... % et px */
+  background-position: top;
 }
 
 /* reservation */
@@ -215,7 +223,7 @@ p {
 
 .where {
   overflow: auto;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .where-img {
@@ -241,4 +249,35 @@ footer {
 
 footer p {
   margin-bottom: 0px;
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 180px 0px 100px 0px;
+  height: 90vh;
+}
+
+.contact-form-container {
+  /* la div à un comportement block (l'un en dessous de l'autre et prend toute la ligne, pas de display particulier à modifier */
+  max-width: 600px;
+  margin: auto;
+}
+.contact-form-container form label {
+  /* display block pour un label par ligne ou enfermer les inputs et labels dans une div individuelle = comportmement block d'office */
+  display: block;
+  font-weight: 700;
+}
+
+.contact-form-container form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.contact-form-container form textarea {
+  min-height: 80px;
 }
